@@ -31,7 +31,7 @@ function LinkPreview({ url }) {
 
   useEffect(() => {
     getResponse();
-  }, [])
+  }, [url])
   
 
     return (

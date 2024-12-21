@@ -11,6 +11,8 @@ const WebsiteInput = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setUrl(false); // Update the state with the submitted URL
+    setVerificationResult({});
     console.log("Submitting");
     const result = {
       isScam: (url == "https://claim-pudgypenguins.org") ? true : false,
